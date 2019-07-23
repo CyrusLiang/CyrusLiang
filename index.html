@@ -3,79 +3,88 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Creating an html website hosted on GitHub">
     <meta name="keywords" content="web design, professional web design">
     <meta name="author" content="Cyrus Liang">
 
-    <title>Cyrus Liang | Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+
+    <title>Cyrus Liang</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Cyrus Liang</h1>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="row">
+                <div class="col-3" id="branding">
+                    <a href="index.html"><h3>Cyrus Liang</h3></a>
+                </div>
+                <div class="col-9 v-middle">
+                    <nav>
+                        <ul>
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="showcase">
+    <section class="txt-right index-hero" id="hero">
         <div class="container">
             <h1>Welcome</h1>
-            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+            <p>I'm a developer and a designer</p>
         </div>
     </section>
 
     <section id="experience">
         <div class="container">
-            <h1>Experience</h1>
-        </div>
-        <div class="container">
-            <div class="box">
-                <img src="./img/alley.jpg">
-                <h3>Alley Tech Inc.</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-                <p>consectetur adipiscing elit</p>
-            </div>
-            <div class="box">
-                <img src="./img/spider.png">
-                <h3>The Spider</h3>
-                <p>In cursus imperdiet metus quis vehicula</p>
-                <p>Aliquam purus nisi</p>
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/alley.jpg">
+                    <div class="txt-center">
+                        <h3>Alley Tech Inc.</h3>
+                        <p>Product Development & IT Technician<br>Mar '18 - Present</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="./img/spider.png">
+                    <div class="txt-center">
+                        <h3>The Spider</h3>
+                        <p>Junior Web Developer<br>Aug '18 - Feb '19</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="education">
         <div class="container">
-            <h1>Education</h1>
-        </div>
-        <div class="container">
-            <div>
-                <img src="./img/sjsu.jpg">
-            </div>
-            <div>
-                <h3>San Jose State University</h3>
-                <p>mollis sed felis sit amet</p>
-                <p>lobortis rutrum mi</p>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./img/sjsu.jpg">
+                </div>
+                <div class="col-8 v-middle">
+                    <h3>San Jose State University</h3>
+                    <p>Bachelor of Science in Computer Science<br><i>Cum Laude</i> - December 2017</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Cyrus Liang, Copyright &copy; 2019</p>
+        <div>Cyrus Liang, Copyright &copy; 2019</div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
