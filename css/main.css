@@ -1,75 +1,154 @@
+/* Cyrus Liang */
+
+/* Globals */
 body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  font: 22px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  background: #f4f4f4;
+  background: #fff;
 }
-
-/* Global */
 section {
-  margin: 50px auto;
-}
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+  margin-bottom: 50px;
 }
 ul {
   margin: 0;
   padding: 0;
 }
+img {
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+  color: #004;
+}
+
+/* Custom Globals */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+.v-middle {
+  vertical-align: middle;
+  margin: auto;
+}
 
 /* Header */
 header {
-  background:#35424a;
+  background:#555;
   color: #fff;
-  padding: 30px;
-  border-bottom: #e8491d 3px solid;
+  padding: 15px;
 }
   header nav {
     float: right;
   }
+  header li {
+    display: inline;
+    padding: 0 20px;
+  }
+    header li.current a {
+      color: #004;
+      font-weight: bold;
+    }
   header a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
   }
-  header ul li {
-    display: inline;
-    padding: 0 20px;
-  }
+#branding h3 {
+  margin: 0;
+  text-transform: none
+}
 
-/* Showcase */
-#showcase {
-  text-align: center;
+/* Hero */
+#hero {
+  padding: 150px 150px 90px 150px;
+  background-repeat: no-repeat;
+}
+#hero .container {
+  width: 100%;
+}
+#hero.index-hero {
+  color: #000;
+  background-image: url("../img/architecture-bay-beach-345750.jpg");
+  background-position: center;
+  background-size: auto;
+}
+#hero.skills-hero {
+  color: #fff;
+  background-image: url("../img/chopped-chopped-wood-cold-376365.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+#hero.projects-hero {
+  color: #fff;
+  background-image: url("../img/aromatic-brewed-coffee-caffeine-872902.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+#hero.contact-hero {
+  color: #000;
+  background-image: url("../img/blue-sky-connection-construction-389726.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#hero h1 {
+  text-transform: uppercase;
 }
 
 /* Experience */
-#experience .box {
-  float: left;
-  text-align: center;
-  width: 50%;
+#experience .txt-center {
+  margin-top: 25px;
 }
-  #experience .box img {
-    width: 100%;
+
+/* Skills */
+#skills img {
+  padding: 5px;
+}
+
+/* Projects */
+#projects .container .row:not(:last-of-type) {
+  border-bottom: #555 3px solid;
+}
+#projects .row {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+  #projects .row img {
+    max-height: 200px;
+    max-width: 300px;
+    width: auto;
+  }
+  #projects .row ul {
+    margin-left: 22px;
   }
 
-/* Education */
-#education .box {
-  float: left;
-  text-align: center;
-  width: 30%;
+/* Contact */
+#contact .mailto {
+  margin: auto;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
 }
-  #education .box img {
-    width: 100%;
-  }
+#contact .mailto:hover {
+  color: #004;
+}
+#contact img {
+  margin: 25px auto;
+}
 
 /* Footer */
 footer {
-  background: #35424a;
+  background: #555;
   color: #fff;
   text-align: center;
   padding: 20px;
-  border-top: #e8491d 3px solid;
+  border-top: #004 3px solid;
 }
