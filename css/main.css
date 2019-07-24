@@ -38,6 +38,9 @@ a:hover {
   vertical-align: middle;
   margin: auto;
 }
+.v-bottom {
+  vertical-align: bottom;
+}
 
 /* Header */
 header {
@@ -69,11 +72,37 @@ header {
   margin: 0;
   text-transform: none
 }
+.bun,
+.ham {
+  width: 24px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+#hamburger-nav {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+  #hamburger-nav:hover .bun {
+    opacity: 0;
+  }
+  #hamburger-nav:hover .ham {
+    background-color: #004;
+  }
+  #hamburger-nav:hover nav {
+    background: #666;
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
 
 /* Hero */
 #hero {
   /* padding: 150px 150px 90px 150px; */
-  min-height: 300px;
+  height: 20vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -143,9 +172,16 @@ footer {
   background-position-y: 27%;
   background-size: cover;
   color: #fff;
-  text-align: center;
-  padding: 90px 20px 20px 20px;
+  padding: 20px;
+  height: 140px;
+  position: relative;
 }
+  footer .copy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
 /* -Responsive- */
 @media only screen and (max-width: 1200px) {
@@ -154,6 +190,9 @@ footer {
 @media only screen and (max-width: 992px) {
   header nav {
     display: none;
+  }
+  #hamburger-nav {
+    display: block;
   }
   #contact .mailto {
     font-size: 4vw;
