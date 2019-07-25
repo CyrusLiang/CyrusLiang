@@ -1,4 +1,4 @@
 # CyrusLiang
-html website
+static website
 
-cyrusliang.com
+www.cyrusliang.com
