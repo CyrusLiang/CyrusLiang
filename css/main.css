@@ -171,11 +171,11 @@ header {
   }
 
 /* Contact */
-.mailto {
-  text-decoration: underline;
-}
 #contact img {
   margin: 25px auto;
+}
+.mailto {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -205,6 +205,9 @@ footer {
   }
   #hamburger-nav {
     display: block;
+  }
+  #education .col-lg-8 {
+    text-align: center;
   }
   .mailto {
     font-size: 4vw;
