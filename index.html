@@ -35,7 +35,7 @@
                 <div class="col-2 col-lg-9 v-middle">
                     <nav>
                         <ul>
-                            <li class="current"><a href="./">Home</a></li>
+                            <li><a href="./">Home</a></li>
                             <li><a href="skills">Skills</a></li>
                             <li><a href="projects">Projects</a></li>
                             <li><a href="contact">Contact</a></li>
@@ -48,7 +48,7 @@
                         <div id="dropdown-nav">
                             <nav>
                                 <ul>
-                                    <li class="current"><a href="./">Home</a></li>
+                                    <li><a href="./">Home</a></li>
                                     <li><a href="skills">Skills</a></li>
                                     <li><a href="projects">Projects</a></li>
                                     <li><a href="contact">Contact</a></li>
@@ -116,9 +116,13 @@
 
     <script>
         $(document).ready(function() {
-            var index = window.location.pathname.split('/')[1];
-            $('ul.li').removeClass('active');
-            $('li.' + index).addClass('active');
+            var url = window.location.pathname, 
+            urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+            $('.menu a').each(function() {
+                if(urlRegExp.test(this.href.replace(/\/$/,''))) {
+                    $(this).addClass('active');
+                }
+            });
         });
     </script>
 </body>

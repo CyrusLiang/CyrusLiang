@@ -37,7 +37,7 @@
                         <ul>
                             <li><a href="./">Home</a></li>
                             <li><a href="skills">Skills</a></li>
-                            <li class="current"><a href="projects">Projects</a></li>
+                            <li><a href="projects">Projects</a></li>
                             <li><a href="contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -50,7 +50,7 @@
                                 <ul>
                                     <li><a href="./">Home</a></li>
                                     <li><a href="skills">Skills</a></li>
-                                    <li class="current"><a href="projects">Projects</a></li>
+                                    <li><a href="projects">Projects</a></li>
                                     <li><a href="contact">Contact</a></li>
                                 </ul>
                             </nav>
@@ -142,9 +142,13 @@
 
     <script>
         $(document).ready(function() {
-            var index = window.location.pathname.split('/')[1];
-            $('ul.li').removeClass('active');
-            $('li.' + index).addClass('active');
+            var url = window.location.pathname, 
+            urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+            $('.menu a').each(function() {
+                if(urlRegExp.test(this.href.replace(/\/$/,''))) {
+                    $(this).addClass('active');
+                }
+            });
         });
     </script>
 </body>
