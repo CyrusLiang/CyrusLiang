@@ -58,7 +58,7 @@ header {
     display: inline;
     padding: 0 20px;
   }
-    header li.current a {
+    header li.active a {
       color: #004;
       font-weight: bold;
     }

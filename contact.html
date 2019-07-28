@@ -94,7 +94,11 @@
     <script>
         $(document).ready(function() {
             var index = window.location.pathname.split('/')[1];
-            $('li.' + index).addClass('active');
+            if (!index) {
+                $('li.index').addClass('active');
+            } else {
+                $('li.' + index).addClass('active');
+            }
         });
     </script>
 </body>
