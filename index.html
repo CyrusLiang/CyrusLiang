@@ -116,13 +116,8 @@
 
     <script>
         $(document).ready(function() {
-            var url = window.location.pathname, 
-            urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
-            $('nav a').each(function() {
-                if(urlRegExp.test(this.href.replace(/\/$/,''))) {
-                    $(this).addClass('active');
-                }
-            });
+            var index = window.location.pathname.split('/')[1];
+            $('li.' + index).addClass('active');
         });
     </script>
 </body>
