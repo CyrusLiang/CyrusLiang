@@ -174,7 +174,7 @@ header {
 .mailto {
   text-decoration: underline;
 }
-  #contact .mailto:hover {
+  .mailto:hover {
     color: #004;
   }
 #contact img {
