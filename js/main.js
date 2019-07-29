@@ -1,10 +1,7 @@
 function loadStuff() {
     console.log('loadStuff');
-
-    $('#header').load('https://www.cyrusliang.com/global/header.html #header-bar');
-
+    $('#header').load('https://www.cyrusliang.com/global/header.html #header-bar');0
     $('#footer').load('https://www.cyrusliang.com/global/footer.html #footer-bar');
-    _callback();
 }
 
 function doStuff() {
@@ -19,8 +16,6 @@ function doStuff() {
 
 $(document).ready(function() {
     console.log("hello!");
-    
     loadStuff();
-
     doStuff();
 });
