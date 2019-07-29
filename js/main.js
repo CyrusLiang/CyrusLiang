@@ -5,6 +5,7 @@ $(document).ready(function($) {
 
     var path = window.location.pathname.split("/").pop();
     if (path == '') path = './';
+    console.log(path);
     var target = $('nav a[href="' + path + '"]');
     target.addClass('current');
 });
