@@ -6,15 +6,13 @@ function loadStuff() {
 
 function doStuff() {
     console.log('doStuff');
-    var url = window.location.pathname;
-    var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
-    $('nav a').each(function() {
-        if(urlRegExp.test(this.href.replace(/\/$/,''))){
-            $(this).addClass('current');
-        }
-    });
-    var index = url.split('/')[1];
-    $('nav li.' + index).addClass('current');
+    var path = window.location.pathname.split("/").pop();
+    if (path == '') {
+        path = './';
+    }
+    var target = $('nav a[href="' + path + '"]');
+
+    target.addClass('current');
 }
 
 $(document).ready(function() {
