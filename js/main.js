@@ -6,12 +6,13 @@ function loadStuff() {
 
 function doStuff() {
     console.log('doStuff');
-    var index = window.location.pathname.split('/')[1];
-    if (!index) {
-        $('nav .index').addClass('active');
-    } else {
-        $('nav .' + index).addClass('active');
-    }
+    var url = window.location.pathname;
+    var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+    $('nav a').each(function() {
+        if(urlRegExp.test(this.href.replace(/\/$/,''))){
+            $(this).addClass('active');
+        }
+    });
 }
 
 $(document).ready(function() {
