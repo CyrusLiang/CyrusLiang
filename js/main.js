@@ -1,9 +1,21 @@
+function loadStuff(_callback) {
+    $('#header').load('https://www.cyrusliang.com/global/header.html #header-bar');
+
+    $('#footer').load('https://www.cyrusliang.com/global/footer.html #footer-bar');
+    _callback();
+}
+
+function doStuff() {
+    var index = window.location.pathname.split('/')[1];
+    (!index) ? $('nav .index').addClass('active') : $('nav .' + index).addClass('active');
+}
+
 $(document).ready(function() {
     console.log("hello!");
     
-    $('#header').load('https://www.cyrusliang.com/global/header.html #header-bar');
-    var index = window.location.pathname.split('/')[1];
-    (!index) ? $('nav .index').addClass('active') : $('nav .' + index).addClass('active');
+    loadStuff(function() {
+        console.log('I\'m fully loaded!');
+    });
 
-    $('#footer').load('https://www.cyrusliang.com/global/footer.html #footer-bar');
+    doStuff();
 });
