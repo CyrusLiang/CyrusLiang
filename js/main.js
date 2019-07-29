@@ -13,6 +13,8 @@ function doStuff() {
             $(this).addClass('active');
         }
     });
+    var index = url.split('/')[1];
+    $('nav li.' + index).addClass('active');
 }
 
 $(document).ready(function() {
