@@ -101,12 +101,12 @@ header {
 
 /* Hero */
 #hero {
-  /* padding: 150px 150px 90px 150px; */
   height: 40vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 #hero:after {
   content: '';
