@@ -10,11 +10,11 @@ function doStuff() {
     var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
     $('nav a').each(function() {
         if(urlRegExp.test(this.href.replace(/\/$/,''))){
-            $(this).addClass('active');
+            $(this).addClass('current');
         }
     });
     var index = url.split('/')[1];
-    $('nav li.' + index).addClass('active');
+    $('nav li.' + index).addClass('current');
 }
 
 $(document).ready(function() {
