@@ -64,10 +64,6 @@ header {
   header nav {
     float: right;
   }
-    header nav a.current {
-      color: #004;
-      font-weight: bold;
-    }
 #branding h3 {
   margin: 0;
   text-transform: none

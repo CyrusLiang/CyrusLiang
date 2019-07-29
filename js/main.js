@@ -7,5 +7,5 @@ $(window).on('load', function() {
     console.log('window');
     var path = window.location.pathname.split('/').pop();
     if (path == '') path = './';
-    $('nav a[href="' + path + '"]').addClass('current');
+    $('nav a[href="' + path + '"]').css({'color':'#004', 'font-weight':'bold'});
 });
