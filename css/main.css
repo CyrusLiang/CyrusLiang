@@ -64,6 +64,10 @@ header {
   header nav {
     float: right;
   }
+    header nav li.active {
+      color: #004;
+      font-weight: bold;
+    }
 #branding h3 {
   margin: 0;
   text-transform: none
