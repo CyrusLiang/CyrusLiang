@@ -51,13 +51,13 @@ header {
   top: 0;
   z-index: 10;
 }
-  header a {
+  header a, footer a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
   }
-  header li {
+  header li, footer li {
     display: inline;
     padding: 0 20px;
   }
