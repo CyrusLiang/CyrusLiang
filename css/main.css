@@ -193,6 +193,9 @@ footer {
     padding: 6px 24px;
     border-radius: 5px;
   }
+  footer .col-12 {
+    margin-bottom: 1rem;
+  }
 
 /* -Responsive- */
 @media only screen and (max-width: 1200px) {
