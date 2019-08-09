@@ -185,7 +185,6 @@ footer {
   background-size: cover;
   color: #fff;
   padding: 30px;
-  height: 140px;
   position: relative;
 }
   footer li {
@@ -193,12 +192,6 @@ footer {
     background: #555;
     padding: 6px 24px;
     border-radius: 5px;
-  }
-  footer .copy {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 
 /* -Responsive- */
