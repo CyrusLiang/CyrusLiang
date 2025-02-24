@@ -2,231 +2,108 @@
 
 /* Globals */
 body {
-  font: 22px/1.5 Arial, Helvetica, sans-serif;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
-  background: #fff;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
+
 section {
-  margin-bottom: 50px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
 }
-ul {
-  margin: 0;
-  padding: 0;
+
+h2 {
+  color: #333;
 }
-img {
-  margin-bottom: 25px;
-  width: 100%;
+
+.contact-info,
+.skills,
+.experience,
+.education {
+  margin-bottom: 20px;
 }
+
+.contact-info p,
+.skills ul,
+.experience ul,
+.education ul {
+  margin: 10px 0;
+}
+
+.skills li,
+.experience li,
+.education li {
+  list-style: none;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Custom Globals */
 a:hover {
   text-decoration: none;
   color: #004;
 }
 
-/* Custom Globals */
-.container {
-  width: 80%;
-  margin: auto;
-}
-.txt-center {
-  text-align: center;
-}
-.txt-right {
-  text-align: right;
-}
-.v-middle {
-  vertical-align: middle;
-  margin: auto;
-}
-.v-bottom {
-  vertical-align: bottom;
-}
-
 /* Header */
 header {
-  background:#555;
-  color: #fff;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-  header a, footer a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  header li {
-    display: inline;
-    padding: 0 20px;
-  }
-  header nav {
-    float: right;
-  }
-#active {
-  color: #004;
-  font-weight: bold;
-}
-#branding h3 {
+
+header h1 {
   margin: 0;
-  text-transform: none
 }
-.bun,
-.ham {
-  width: 24px;
-  height: 4px;
-  background-color: #fff;
-  margin: 4px 0;
-}
-#hamburger-nav {
-  display: none;
-  float: right;
-  cursor: pointer;
-}
-  #hamburger-nav:hover .bun {
-    opacity: 0;
-  }
-  #hamburger-nav:hover .ham {
-    background-color: #004;
-  }
-  #hamburger-nav:hover nav {
-    background: #666;
-    display: block;
-    position: absolute;
-    right: 0;
-    padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
 
 /* Hero */
-#hero {
-  height: 40vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-}
-#hero:after {
-  content: '';
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
-  height: 100%;
-  width: 100%;
-}
-#hero.index-hero {
-  color: #000;
-  background-image: url("../img/architecture-bay-beach-345750.jpg");
-}
-#hero.skills-hero {
-  color: #fff;
-  background-image: url("../img/chopped-chopped-wood-cold-376365.jpg");
-}
-#hero.projects-hero {
-  color: #fff;
-  background-image: url("../img/beverage-brewed-coffee-caffeine-374885.jpg");
-}
-#hero.contact-hero {
-  color: #000;
-  background-image: url("../img/blue-sky-connection-construction-389726.jpg");
-}
-  #hero .container {
-    width: 100%;
-  }
-  #hero h1 {
-    text-transform: uppercase;
-  }
-.hero-txt {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  color: #000;
-}
 
 /* Skills */
-#skills img {
-  padding: 5px;
-}
 
 /* Projects */
 #projects .container .row:not(:last-of-type) {
   border-bottom: #555 3px solid;
 }
+
 #projects .row {
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
-  #projects .row img {
-    max-width: 300px;
-    height: auto;
-  }
-  #projects .row ul {
-    margin-left: 22px;
-  }
+
+#projects .row img {
+  max-width: 300px;
+  height: auto;
+}
+
+#projects .row ul {
+  margin-left: 22px;
+}
 
 /* Contact */
-#contact img {
-  margin: 25px auto;
-}
-.mailto {
-  text-decoration: underline;
-}
 
 /* Footer */
 footer {
-  background: url("../img/art-black-and-white-black-background-1727658.jpg") no-repeat;
-  background-position-y: 27%;
-  background-size: cover;
-  color: #fff;
-  padding: 30px;
-  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
 }
-  footer li {
-    display: inline;
-    background: #555;
-    padding: 6px 24px;
-    border-radius: 5px;
-  }
-  footer .col-12 {
-    margin-bottom: 1rem;
-  }
 
 /* -Responsive- */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {}
 
-}
-@media only screen and (max-width: 992px) {
-  header nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: block;
-  }
-  #education .col-lg-8 {
-    text-align: center;
-  }
-  .mailto {
-    font-size: 4vw;
-  }
-}
-@media only screen and (max-width: 768px) {
-  footer li {
-    display: block;
-    margin: 7px auto;
-    width: fit-content;
-  }
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {}
 
-}
-@media only screen and (min-width: 600px) {
-  #hamburger-nav {
-    display: none;
-  }
-}
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
